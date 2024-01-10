@@ -2,7 +2,7 @@
 FROM node:20
 
 # Usando o diretório virtual do app
-WORKDIR /home/decocloud
+WORKDIR /home/depcloud
 
 # Comando para executar a aplicação
 CMD npm install --production && npm start
