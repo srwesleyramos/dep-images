@@ -7,4 +7,4 @@ USER        depcloud
 WORKDIR     /home/depcloud
 
 # Comando para executar a aplicação
-CMD npm install --omit=dev && npm start
+CMD npm install -g npm@latest && npm install --omit=dev && npm start
