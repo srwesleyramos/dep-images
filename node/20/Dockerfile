@@ -2,7 +2,9 @@
 FROM node:20
 
 # Usando o diretório virtual do app
-WORKDIR /home/depcloud
+RUN         useradd -s /bin/bash depcloud
+USER        depcloud
+WORKDIR     /home/depcloud
 
 # Comando para executar a aplicação
-CMD npm install --production && npm start
+CMD npm install --omit=dev && npm start
